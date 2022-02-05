@@ -1,0 +1,183 @@
+<!-- TELLING BROWSER DOCTYPE IS HTML -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--head element for things that are not visible in the browser-->
+
+    <!-- head will contain page title with the title element so add it-->
+    <title>The Basic Language of the Web - HTML</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Using a generic div element no need since this is just to center the page -->
+    <div class="container">
+      <header class="main-header">
+        <h1>📘The Code Magazine</h1>
+        <nav>
+          <p>
+            <a href="blog.html">Blog</a>
+            <a href="#" target="_blank">Challenges</a>
+            <a href="#" target="_blank">Flexbox</a>
+            <a href="#" target="_lbank">CSS Grid</a>
+            <a href="product.html">Product</a>
+          </p>
+        </nav>
+      </header>
+
+      <article>
+        <header class="post-header">
+          <h2>The Basic Language of the Web - HTML</h2>
+
+          <!--Linking an image to a webpage-->
+          <a href="http://www.udemy.com" target="_blank">
+            <img
+              src="./img/laura-jones.jpg"
+              alt="Authors Image"
+              width="50"
+              height="50"
+            />
+          </a>
+
+          <!--    just a plain vanilla image posting not linked-->
+          <img
+            src="./img/laura-jones.jpg"
+            alt="Authors new Image"
+            width="60"
+            height="60"
+          />
+
+          <p id="author">
+            Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+          </p>
+
+          <img
+            src="./img/post-img.jpg"
+            alt="HTML code on a screen"
+            width="500"
+            height="200"
+            class="post-image"
+          />
+        </header>
+
+        <p>
+          All modern websites and web applications are built using three
+          <em>fundamental</em>web technologies: HTML, CSS and JavaScript. These
+          are the languages of the web.
+        </p>
+
+        <p>
+          In this post, let's focus on HTML. We will learn what HTML is all
+          about, and why you too should learn it.
+        </p>
+
+        <h3>What is HTML?</h3>
+
+        <p>
+          HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+          <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+          language that web developers use to structure and describe the content
+          of a webpage (not a programming language).
+        </p>
+
+        <p>
+          HTML consists of elements that describe different types of content:
+          paragraphs, links, headings, images, video, etc. Web browsers
+          understand HTML and render HTML code as websites.
+        </p>
+
+        <p>In HTML, each element is made up of 3 parts:</p>
+
+        <ol>
+          <li>The opening tag</li>
+          <li>The closing tag</li>
+          <li>The actual element</li>
+        </ol>
+
+        <p>
+          You can learn more on
+          <a href="https://developer.mozilla.org/en-US/" target="_blank"
+            >MDN docs</a
+          >
+        </p>
+
+        <h3>
+          <p>Why should you learn HTML?</p>
+        </h3>
+
+        <p>
+          There are countless reasons you should learn HTML. Here are five of
+          them:
+        </p>
+
+        <ul>
+          <li>To be able to use the fundamental web dev language</li>
+          <li>
+            To hand-craft beautiful websites instead of relying on tools like
+            Worpress or Wix
+          </li>
+
+          <li>To build web applications</li>
+
+          <li>To impress friends</li>
+
+          <li>To have fun 😁😂😎😍</li>
+        </ul>
+        <p>Hopefully you learnt something new here. See you next time!</p>
+      </article>
+
+      <aside>
+        <h4>Related Posts</h4>
+        <ul class="list-items">
+          <li>
+            <a href="#">
+              <img
+                src="./img/related-1.jpg"
+                alt="Man typing on screen"
+                width="75"
+                height="75"
+              />
+              How to Learn Web development
+            </a>
+            <p class="related-author">By Runi Kanth</p>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./img/related-2.jpg"
+                alt="Thunder and Lightning"
+                width="75"
+                height="75"
+              />
+              The unknown powers of CSS
+            </a>
+            <p class="related-author">Jonas John</p>
+          </li>
+          <li>
+            <!-- the first two above had images in the anchor tag so images also were links. this last one 
+            image is inline with anchor but image does not have a link-->
+            <img
+              src="./img/related-3.jpg"
+              alt="javascript code on screen"
+              width="75"
+              height="75"
+            />
+            <a href="#"> Why Javascript is awesome </a>
+            <p class="related-author">By Bob Baffer</p>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- HTML entitiies this entitiy is &copy;   look at hi his resources page-->
+
+      <!--Descendent selctor cn be used here-->
+      <footer>
+        <p id="copyright" class="copyright test">
+          Copyright &copy; 2022 by Runi Kanth Technologies
+        </p>
+      </footer>
+    </div>
+
+    <button>💚like</button>
+  </body>
+</html>
